@@ -1,0 +1,7 @@
+torch
+transformers
+sentence-transformers
+pandas
+scikit-learn
+matplotlib
+joblib
