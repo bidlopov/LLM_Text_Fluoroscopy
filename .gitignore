@@ -1,0 +1,12 @@
+# IDE config
+.idea/
+.vscode/
+*.iml
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+
+# System files
+.DS_Store
+Thumbs.db
