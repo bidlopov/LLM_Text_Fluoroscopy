@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d443bff-ef9a-44f9-8b48-fee6fd117c40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/embedding_classify/extract_features_fixed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/embedding_classify/train_classifier_fixed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/embedding_classify/extract_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/embedding_classify/extract_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/embedding_classify/fluoroscopy_mlp.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/embedding_classify/fluoroscopy_mlp.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/embedding_classify/look_inside_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/test scripts/look_inside_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/embedding_classify/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/embedding_classify/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/embedding_classify/result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/embedding_classify/smaller_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/embedding_classify/smaller_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/embedding_classify/test_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/test scripts/test_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/embedding_classify/train_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/embedding_classify/train_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +49,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.extract_features.executor": "Run",
+    "Python.extract_features_fixed.executor": "Run",
     "Python.look_inside_model.executor": "Run",
     "Python.predict.executor": "Run",
     "Python.smaller_dataset.executor": "Run",
     "Python.test_extract.executor": "Run",
     "Python.train_classifier.executor": "Run",
+    "Python.train_classifier_fixed.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
@@ -49,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maxby\LLM_Detect_Project\Text-Fluoroscopy\test scripts" />
       <recent name="C:\Users\maxby\LLM_Detect_Project\Text-Fluoroscopy\dataset" />
       <recent name="C:\Users\maxby\LLM_Detect_Project\Text-Fluoroscopy\embedding_classify" />
       <recent name="C:\Users\maxby\LLM_Detect_Project\Text-Fluoroscopy\fluoroscopy" />

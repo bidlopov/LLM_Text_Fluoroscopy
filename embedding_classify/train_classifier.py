@@ -8,7 +8,7 @@ import joblib
 from extract_features import get_middle_layer_features
 
 # Загружаем датасет
-df = pd.read_csv("dataset/dataset.csv")
+df = pd.read_csv("../dataset/dataset.csv")
 texts = df["text"].tolist()
 labels = df["label"].tolist()
 
@@ -21,16 +21,22 @@ for text in texts:
 X = np.stack(features)
 y = np.array(labels)
 
-# ✂Разделяем на train/test
+# разделить на train/test-выборки
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Обучаем классификатор
+# Обучение MLP-классификатора
 clf = MLPClassifier(hidden_layer_sizes=(512, 128), activation="tanh", max_iter=200)
 clf.fit(X_train, y_train)
 
-# Оцениваем
+# результат на обучающая выборка (проверка на переобучение)
+y_train_pred = clf.predict(X_train)
+print("Train Performance:")
+print(classification_report(y_train, y_train_pred))
+
+# оценка на тестовой выборке (проверка на переобучение)
 y_pred = clf.predict(X_test)
+print("Test Performance:")
 print(classification_report(y_test, y_pred))
 
-# Сохраняем модель
+# сохранить готовую модель чтобы заново не обучать
 joblib.dump(clf, "fluoroscopy_mlp.joblib")
