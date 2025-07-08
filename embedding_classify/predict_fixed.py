@@ -1,12 +1,9 @@
 import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
-# from extract_features import get_middle_layer_features
 from extract_features_fixed import get_middle_layer_features
 
 # загрузка обученного классификатора
-# ~~~ Если фиксированный слой, то заменить на _fixed ~~~
-# clf = joblib.load("fluoroscopy_mlp.joblib")
 clf = joblib.load("fluoroscopy_mlp_fixed.joblib")
 
 # загрузка датасета
@@ -39,7 +36,5 @@ plt.title("LLM Detection (Real Dataset Examples)")
 plt.xticks(rotation=45)
 plt.legend()
 plt.tight_layout()
-# plt.savefig("../assets/result.png")
-# print("График сохранён: ./assest/result.png")
 plt.savefig("../assets/result_fixed.png")
 print("График сохранён: ./assest/result_fixed.png")
