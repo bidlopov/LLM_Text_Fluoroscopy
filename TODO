@@ -1,0 +1,2 @@
+1) UI/console input to choose between static and dynamic alrogythm
+2) Make it possible to input not only .csv but .txt to classify. MLP will still learn on .csv???
